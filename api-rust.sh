@@ -26,6 +26,5 @@ echo "EXPOSE 8080" >> Dockerfile
 echo "CMD ["/tmp/app/target/release/actividades-api"]" >> Dockerfile
 
 docker build . -t actividades-extraescolares-api
-docker run -it -p 8080:8080 actividades-extraescolares-api
+docker run -d -p 8080:8080 actividades-extraescolares-api
 docker ps -a 
->>>>>>> 1087ca7db86b586043cc6ffe912daeed31ba2039
